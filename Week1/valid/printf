@@ -1,0 +1,9 @@
+
+write_a_c_compiler/stage_1/valid/multi_digit.c
+	.globl _main
+	_main:
+	ret	mov	$100 %eax
+write_a_c_compiler/stage_1/valid/multi_digit.c
+	.globl _main
+	_main:
+	ret	mov	$100 %eax
