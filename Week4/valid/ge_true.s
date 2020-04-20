@@ -4,9 +4,9 @@ _main:
 
 	mov	$1, %eax
 	push	%eax
-	mov	$2, %eax
+	mov	$1, %eax
 	pop	%ecx
 	cmpl	%eax, %ecx
 	movl	$0, %eax
-	sete	%al
+	setge	%al
 	ret

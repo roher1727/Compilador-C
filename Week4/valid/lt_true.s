@@ -8,5 +8,5 @@ _main:
 	pop	%ecx
 	cmpl	%eax, %ecx
 	movl	$0, %eax
-	sete	%al
+	setl	%al
 	ret

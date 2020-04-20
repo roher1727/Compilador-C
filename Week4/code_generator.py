@@ -80,10 +80,10 @@ def ensamblador_binario(nodo, assembly_file):
         f = open(assembly_file,"a")
         if nodo.dato=="||":
             f.write("\n\tcmpl\t$0, %eax")
-            f.write("\n\tje\t_clause2")
+            f.write("\n\tje\t_clause")
             f.write("\n\tmovl\t$1, %eax")
             f.write("\n\tjmp\t_end")
-            f.write("\n_clause2:")
+            f.write("\n_clause:")
         elif nodo.dato=="&&":
             f.write("\n\tcmpl\t$0, %eax")
             f.write("\n\tje\t_clause2")

@@ -8,6 +8,7 @@ _main:
 	movl	$1, %eax
 	jmp	_end
 _clause2:
+	mov	$0, %eax
 	cmpl	$0, %eax
 	movl	$0, %eax
 	setne	%al

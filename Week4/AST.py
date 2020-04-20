@@ -29,7 +29,7 @@ class AST():
         print()
 
     def printarbol(self,Node,count,hoja):
-        if count>=1:
+        if count >= 1:
             if Node.izquierdo or Node.derecho:
                 print("|--->", end="")
             else:
@@ -46,7 +46,3 @@ class AST():
                 for _ in range(count):
                     print("   ", end="")
                 self.printarbol(Node.derecho,count+1,"(derecho)")
-
-
-
-

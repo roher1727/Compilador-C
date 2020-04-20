@@ -2,11 +2,11 @@
 	.globl _main
 _main:
 
-	mov	$1, %eax
+	neg	%eax
 	push	%eax
-	mov	$2, %eax
+	neg	%eax
 	pop	%ecx
 	cmpl	%eax, %ecx
 	movl	$0, %eax
-	sete	%al
+	setne	%al
 	ret

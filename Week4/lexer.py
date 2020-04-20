@@ -28,7 +28,7 @@ def lexing(cadena, new_tokens):
         >>> "int()", ["int", '(', ')']
     """
 
-    palabras_reservadas = {"openBrace" : '{', "closeBrace" : '}', "openParen" : '(', "closeParen" : ')', "semicolon" : ';', "identifier":'main',  "constant" :r'[0-9]+', "negation":'-', "bitwise":'~', "logicalNegation":'!', "addition":'+', "multiplication":'*', "division":'/', "AND":'&&', "OR":'||', "equal":'==', "notequal": '!=',"lessthanequal":'<=', "greaterthanequal":'>=', "lessthan":'<', "greaterthan":'>'}
+    palabras_reservadas = {"openBrace" : '{', "closeBrace" : '}', "openParen" : '(', "closeParen" : ')', "semicolon" : ';', "identifier":'main',  "constant" :r'[0-9]+', "negation":'-', "bitwise":'~',  "notequal": '!=', "logicalNegation":'!', "addition":'+', "multiplication":'*', "division":'/', "AND":'&&', "OR":'||', "equal":'==',"lessthanequal":'<=', "greaterthanequal":'>=', "lessthan":'<', "greaterthan":'>'}
     patrones = { "intKeyword" : 'int', "returnKeyword":'return', }
     identificacion = {'A' : palabras_reservadas, 'B' : patrones}
     alto = True
